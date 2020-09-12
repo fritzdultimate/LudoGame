@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Ludo Game</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <canvas id="canvas"></canvas>
+
+
+  <div class="display-dice" id="display_dice">
+      <div>Dice one:
+          <span id="diceone">?</span>
+      </div>
+      <div>Dice two:
+          <span id="dicetwo">?</span>
+    </div>
+  </div>
+
+  <select class="dice_one">
+    
+  </select>
+  <div class="seeds-container" id="seed_container_one">
+    
+  </div>
+  <select class="dice_two">
+    
+  </select>
+  <div class="seeds-container" id="seed_container_two">
+    
+  </div>
+
+
+  <div class="btn">
+    <button onclick="toss()" class='roll-button'>ROLL DICE</button>
+    <button id='comeOutButton' class='roll-button'>Come Out ROLL</button>
+    <button id='pointRollButton' class='roll-button'>POINT ROLL</button>
+    
+  </div>
+ 
+
+
+  <div class="dice-board">
+
+
+    <div class="container-dice">
+
+
+      <div id='dice1' class="dice dice-one">
+        <div id="dice-one-side-one" class='side one'>
+          1
+        </div>
+        <div id="dice-one-side-two" class='side two'>
+          2
+        </div>
+        <div id="dice-one-side-three" class='side three'>
+         3
+        </div>
+        <div id="dice-one-side-four" class='side four'>
+          4
+        </div>
+        <div id="dice-one-side-five" class='side five'>
+          5
+        </div>
+        <div id="dice-one-side-six" class='side six'>
+          9
+        </div>
+      </div>
+
+
+    </div> <!-- END container-dice -->
+
+
+    <div class="container-dice">
+
+
+      <div id='dice2' class="dice dice-two">
+        <div id="dice-two-side-one" class='side one'>
+          <span style="text-align:center">1</span>
+        </div>
+        <div id="dice-two-side-two" class='side two'>
+            <span style="text-align:center">2</span>
+        </div>
+        <div id="dice-two-side-three" class='side three'>
+            <span style="text-align:center">3</span>
+        </div>
+        <div id="dice-two-side-four" class='side four'>
+            <span style="text-align:center">4</span>
+        </div>
+        <div id="dice-two-side-five" class='side five'>
+            <span style="text-align:center">5</span>
+        </div>
+        <div id="dice-two-side-six" class='side six'>
+            <span style="text-align:center">9</span>
+        </div>
+      </div>
+
+
+      </div>  <!-- END container-dice 2 -->
+
+
+  </div> <!-- END dice-board -->
+        <script src="script.js" async defer></script>
+        <script src="toss.js"></script>
+    </body>
+</html>

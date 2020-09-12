@@ -1,0 +1,150 @@
+.seeds-container {
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+  /* background: red; */
+  width: 100%;
+  /* height: 40px; */
+}
+
+
+
+.btn-dice {
+  flex-direction: row;
+  height: 30px;
+  box-shadow: 1px 1px 3px 0px #607D8B;
+  margin:5px;
+
+}
+  
+    .roll-button {
+    margin: 15px auto; }
+  
+  .btn button {
+    padding: 10px 50px;
+    color: #ffffcc;
+    background: #AA4F39;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 3px #802915;
+    outline: none;
+    transition: .3s; }
+  
+  .btn button:hover, .btn button:active {
+    outline: none;
+    background: #802915;
+    cursor: pointer;
+    padding: 11px 50px 9px 50px;
+    margin-top: 15px; }
+  
+  .dice-board {
+    width: 10%;
+    height: 10%; }
+  
+  /*########## DICE THINGS ###########*/
+  .container-dice {
+    display: inline-block;
+    margin-top: 10px;
+    width: 30px /*300px*/;
+    margin: 50px auto 0 auto; 
+}
+  
+  .dice {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    transform-style: preserve-3d;
+    transition: transform 1s; }
+  
+  .divot {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    margin: -20px 0 0 -20px;
+    border-radius: 20px;
+    background: #000; }
+  
+  .dice-one {
+    margin-left: 15px; }
+  
+  .dice-two {
+    margin-left: 15px; }
+  
+  .side {
+    background-color: rgba(255, 255, 204, 0.97);
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border: 2px solid black; }
+  
+  .side:nth-child(1) {
+    transform: translateZ(10px); }
+  
+  .side:nth-child(6) {
+    transform: rotateY(180deg) translateZ(10px); }
+  
+  .side:nth-child(3) {
+    transform: rotateY(90deg) translateZ(10px); }
+  
+  .side:nth-child(4) {
+    transform: rotateY(-90deg) translateZ(10px); }
+  
+  .side:nth-child(5) {
+    transform: rotateX(90deg) translateZ(10px); }
+  
+  .side:nth-child(2) {
+    transform: rotateX(-90deg) translateZ(10px); }
+  
+  .show-1 {
+    transform: rotateX(720deg) rotateZ(-720deg); }
+  
+  .show-6 {
+    transform: rotateX(-900deg) rotateZ(1080deg); }
+  
+  .show-3 {
+    transform: rotateY(-450deg) rotateZ(-1440deg); }
+  
+  .show-4 {
+    transform: rotateY(810deg) rotateZ(720deg); }
+  
+  .show-5 {
+    transform: rotateX(-810deg) rotateZ(-1080deg); }
+  
+  .show-2 {
+    transform: rotateX(450deg) rotateZ(-720deg); }
+  
+  /* Dice Dots */
+  .two-1, .three-1, .four-1, .five-1, .six-1 {
+    top: 20%;
+    left: 20%; }
+  
+  .four-3, .five-3, .six-4 {
+    top: 20%;
+    left: 80%; }
+  
+  .one-1, .three-2, .five-5 {
+    top: 50%;
+    left: 50%; }
+  
+  .four-2, .five-2, .six-3 {
+    top: 80%;
+    left: 20%; }
+  
+  .two-2, .three-3, .four-4, .five-4, .six-6 {
+    top: 80%;
+    left: 80%; }
+  
+  .six-2 {
+    top: 50%;
+    left: 20%; }
+  
+  .six-5 {
+    top: 50%;
+    left: 80%; }
+  
+  /* CLEARFIX */
+  .clearfix:after {
+    content: "";
+    display: table;
+    clear: both; }
+  
