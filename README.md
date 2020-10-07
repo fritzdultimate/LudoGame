@@ -14,5 +14,5 @@ Ludo game starts with four tokens placed in each player's starting box. A dice i
   - Knocking out other's token will give you an extra chance to roll the dice again.
 
 
-#### Demo can be find here:
+#### Demo can be found here:
 https://ludogame.netlify.app/
